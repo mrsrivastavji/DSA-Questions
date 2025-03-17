@@ -25,8 +25,8 @@ public class main{
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter the string: ");
         String str=sc.nextLine();
-        // System.out.print("Enter the element: ");
-        // char ele=sc.next().charAt(1);
-        find(str,0,'a');
+        System.out.print("Enter the element: ");
+        char ele=sc.next().charAt(0);
+        find(str,0,ele);
     }
 }
