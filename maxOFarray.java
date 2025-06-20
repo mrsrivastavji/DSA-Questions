@@ -13,6 +13,7 @@ public class main{
         }
         
         int max= Integer.MIN_VALUE;
+        // Method 1
         // for(int l=0; l<n; l++){
         //     for(int i=0; i<n-l; i++){
         //         int B[]=new int[n];
@@ -27,6 +28,7 @@ public class main{
         //     }
         // }
 
+        // Method 2
         // for(int l=0; l<n; l++){
         //     int sum=0;
         //     for(int j=l; j<n; j++){
@@ -35,6 +37,7 @@ public class main{
         //     }
         // }
 
+        // Method 3
         int sum=0;
         for(int j=0; j<n; j++){
             sum+=A[j];
