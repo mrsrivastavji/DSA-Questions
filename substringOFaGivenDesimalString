@@ -1,0 +1,40 @@
+import java.util.*;
+
+public class Main {
+    
+    public static int countSubstring(String s) {
+        int prevCount = 0; 
+        int currCount = 1;  
+        int result = 0;
+
+        for (int i = 1; i < s.length(); i++) {
+            
+            if (s.charAt(i) == s.charAt(i - 1)) {
+                currCount++;
+            } else {
+                
+                result += Math.min(prevCount, currCount);
+                
+                prevCount = currCount;
+                currCount = 1;
+            }
+        }
+
+        result += Math.min(prevCount, currCount);
+
+        return result;
+    }
+    
+    public static void main(String[] args) {
+        // Create Scanner object for input
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the string: ");
+        String s = sc.next();
+        
+        int result = Main.countSubstring(s);  
+        
+        System.out.println("Number of valid substrings: " + result);
+
+    }
+}
