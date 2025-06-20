@@ -1,0 +1,24 @@
+import java.util.*;
+
+public class Main{
+	public static void main(String[] args){
+		LinkedList<Integer> list=new LinkedList<Integer>();
+		Scanner sc=new Scanner (System.in);
+		System.out.print("Enter the no of element to be added in list: ");
+		int n=sc.nextInt();
+		System.out.print("Enter the element to be added in list: ");
+		for(int i=1; i<=n; i++){
+		    int x=sc.nextInt();
+		    list.add(x);
+		}
+		
+		System.out.println(list);
+		
+		for(int i=1; i<=n; i++){
+		    if(list.get(i)==7){
+		        System.out.println("Element is present at "+(i+1));
+		        return;
+		    }
+		}
+	}
+}
