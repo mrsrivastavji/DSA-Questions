@@ -2,7 +2,7 @@
 // import java.util.ArrayList;
 // import java.util.Collections;
 
-class ArrayList {
+class ArrayLis {
     public static void main(String args[]){
         ArrayList<Integer> list = new ArrayList<Integer>();
         
@@ -17,6 +17,9 @@ class ArrayList {
         System.out.println(element);
         
         list.add(0,5);
+        System.out.println(list);
+     
+        Collections.sort(list);
         System.out.println(list);
         
         list.set(0,0);
@@ -36,10 +39,6 @@ class ArrayList {
         for(int i=0;i<list.size();i++) {
             System.out.print(list.get(i)+" ");
         }
-        System.out.println();
-        
-        Collections.sort(list);
-        System.out.println(list);
-        
+        System.out.println(); 
     }
 }
