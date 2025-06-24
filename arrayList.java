@@ -1,7 +1,8 @@
-import java.util.ArrayList;
-import java.util.Collections;
+ import java.util.*;
+// import java.util.ArrayList;
+// import java.util.Collections;
 
-class ArrayLis {
+class ArrayList {
     public static void main(String args[]){
         ArrayList<Integer> list = new ArrayList<Integer>();
         
